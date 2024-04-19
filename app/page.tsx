@@ -4,6 +4,7 @@ import { contentIcon } from "@/src/data/IconWithText";
 import { contentDescription } from "@/src/data/TextWithDescription";
 import { TextWithDescription } from "./_components/TextWithDescription";
 import { Spacing } from "./_components/Spacing";
+import { CarouselComponent } from "./_components/carousel";
 
 export default function Home() {
   return (
@@ -15,6 +16,10 @@ export default function Home() {
       <TextWithDescription data={contentDescription[0]} />
       <Spacing size="md" />
       <TextWithDescription data={contentDescription[1]} />
+      <Spacing size="md" />
+      <div className="flex justify-center">
+        <CarouselComponent />
+      </div>
     </Layout>
   );
 }
