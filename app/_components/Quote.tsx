@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Quote = () => {
   return (
-    <section className="pt-16 md:pt-32 px-10 flex flex-col md:flex-row items-center relative max-w-screen-xl mx-auto">
+    <section className="flex flex-col md:flex-row items-center relative">
       <div>
         <p className="text-accent-foreground text-3xl font-bold">
           <span className="text-primary text-4xl">"</span>Tout le monde est un
