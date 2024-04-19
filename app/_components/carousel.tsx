@@ -2,12 +2,7 @@
 
 import * as React from "react";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardTitle,
-} from "@/src/components/ui/card";
+import { Card, CardDescription, CardTitle } from "@/src/components/ui/card";
 import {
   Carousel,
   CarouselContent,
