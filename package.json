@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "email": "email dev",
-    "versel-build": "next build"
+    "vercel-build": "next build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
