@@ -17,12 +17,12 @@ export const Herro = () => {
   const arrayImageHero = [
     {
       id: 1,
-      src: "/atelier1.jpeg",
+      src: "/hero/atelier1.jpeg",
       alt: "Vercel",
     },
     {
       id: 2,
-      src: "/atelier2.jpeg",
+      src: "/hero/atelier2.jpeg",
       alt: "Vercel",
     },
   ];
