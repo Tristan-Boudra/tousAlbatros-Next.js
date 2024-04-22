@@ -1,9 +1,11 @@
+import { Layout } from "@/src/components/layout/Layout";
 import { PageParams } from "@/src/types/next";
+import { ContentContact } from "../_components/ContentContact";
 
 export default async function RoutePage(props: PageParams<{}>) {
   return (
-    <div>
-      <h1>Contact</h1>
-    </div>
+    <Layout className="h-full">
+      <ContentContact />
+    </Layout>
   );
 }

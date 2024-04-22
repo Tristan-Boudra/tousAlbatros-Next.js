@@ -1,13 +1,16 @@
 import { Home, Presentation } from "lucide-react";
 
 const HomeIcon = (
-  <div className="flex bg-[#FFF9EB] w-12 h-12 md:w-16 md:h-16 p-4 rounded-lg content-center items-center">
-    <Home className="flex text-secondary items-center mx-auto" size={30} />
+  <div className="flex bg-[#FFF9EB] dark:bg-[#241607] w-12 h-12 md:w-16 md:h-16 p-4 rounded-lg content-center items-center">
+    <Home
+      className="flex text-secondary dark:text-secondary-foreground items-center mx-auto"
+      size={30}
+    />
   </div>
 );
 
 const Prestation = (
-  <div className="flex bg-[#F2F9E9] w-12 h-12 md:w-16 md:h-16 p-4 rounded-lg content-center items-center">
+  <div className="flex bg-[#F2F9E9] dark:bg-[#072313] w-12 h-12 md:w-16 md:h-16 p-4 rounded-lg content-center items-center">
     <Presentation
       className="flex text-[#BBE18B] items-center mx-auto"
       size={30}

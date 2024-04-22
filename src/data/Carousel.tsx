@@ -1,4 +1,4 @@
-export const reviews = [
+const reviews = [
   {
     id: 0,
     name: "Jeune participant·e",
@@ -60,3 +60,10 @@ export const reviews = [
       "« On ne s’est pas ennuyés, c’est bien structuré. Il y a tout : on joue, on parle. »",
   },
 ];
+
+export const reviewsWithImages = reviews.map((review) => ({
+  ...review,
+  image: `https://avatar.iran.liara.run/public/${Math.floor(
+    Math.random() * (100 - 1 + 1) + 1
+  )}`,
+}));

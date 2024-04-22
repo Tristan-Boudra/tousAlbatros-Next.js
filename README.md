@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TousAlbatros
+
+Welcome to TousAlbatros - a journey of empowerment and self-discovery for the youth.
+
+## About TousAlbatros
+
+TousAlbatros is more than just a project; it's the inspiring tale of three visionary women coming together to craft a unique approach. By merging their expertise in social support, socio-educational animation, and coaching, they've given life to a methodology that transforms the trajectory of young lives.
+
+## Our Vision
+
+At TousAlbatros, we believe that constructing a meaningful future begins with understanding one's own history. We embark on a mission to equip young minds with the invaluable tools of introspection and projection. Our association employs a comprehensive toolkit to foster self-determination, vitality, and the innate ability of adolescents to take charge of their destinies. We believe that within every individual lies untapped potential, waiting to be unveiled – just like the majestic albatross takes flight.
 
 ## Getting Started
 
-First, run the development server:
+To launch the website locally, follow these simple steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1- Install dependencies: npm install </br>
+2- Start the development server: npm start </br>
+3- Open http://localhost:3000 in your preferred web browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to explore, engage, and be a part of the TousAlbatros journey.

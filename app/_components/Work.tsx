@@ -11,46 +11,52 @@ export const Work = () => {
   };
   return (
     <>
-      <div className="bg-[#D8F2FA] w-max rounded-full">
-        <p className="text-primary px-3 py-2 w-auto text-xs">Ateliers</p>
-      </div>
-      <h1 className="text-2xl md:text-4xl text-accent-foreground font-bold mt-4">
-        Nos programmes d’ateliers les plus demandés
-      </h1>
-      <div className="flex items-center justify-center bg-white">
-        <div className="z-10 max-w-7xl gap-10 flex flex-col md:flex-row w-full items-center justify-between h-[560px]">
-          <div className="md:w-5/12 space-y-3">
-            {Project.map((item, index) => (
-              <div
-                key={index}
-                className={`border border-slate-300 rounded-lg p-4 shadow-sm cursor-pointer duration-300 
-            ${active === index ? "bg-[#D8F2FA] w-full" : "bg-white w-11/12"}
+      <div className="px-5 md:px-0">
+        <div className="bg-[#D8F2FA] bg-primary-foreground w-max rounded-full">
+          <p className="text-primary px-3 py-2 w-auto text-xs">Ateliers</p>
+        </div>
+        <h1 className="text-xl md:text-3xl lg:text-4xl text-accent-foreground font-bold mt-4">
+          Nos programmes d’ateliers les plus demandés
+        </h1>
+        <div className="flex items-center justify-center mt-10">
+          <div className="z-10 max-w-7xl gap-10 flex flex-col md:flex-row w-full items-center justify-between md:h-[560px]">
+            <div className="md:w-5/12 space-y-3">
+              {Project.map((item, index) => (
+                <div
+                  key={index}
+                  className={`border border-slate-300 dark:border-primary-foreground rounded-lg p-4 shadow-sm cursor-pointer duration-300 
+            ${
+              active === index
+                ? "bg-[#D8F2FA] dark:bg-primary-foreground w-full"
+                : "w-11/12"
+            }
             `}
-                onMouseEnter={() => handleShow(index)}
-              >
-                <h1 className="text-xl font-bold text-accent-foreground">
-                  {item.title}
-                </h1>
-                {active === index && "active" && (
-                  <p className="text-sm text-muted-foreground mt-5">
-                    {item.description}
-                  </p>
-                )}
-              </div>
-            ))}
-          </div>
-          <div className="md:w-7/12 rounded-3xl overflow-hidden bg-white h-96 flex flex-col border border-slate-200">
-            {Project.map((item, index) => (
-              <div
-                key={index}
-                className="w-full h-full shrink-0 flex items-center justify-center p-4 duration-300"
-                style={{
-                  transform: `translateY(-${active * 100}%)`,
-                }}
-              >
-                <WorkWithCarousel data={item.image} />
-              </div>
-            ))}
+                  onMouseEnter={() => handleShow(index)}
+                >
+                  <h1 className="text-lg md:text-xl lg:text-2xl font-bold text-accent-foreground">
+                    {item.title}
+                  </h1>
+                  {active === index && "active" && (
+                    <p className="text-sm text-muted-foreground mt-5">
+                      {item.description}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+            <div className="md:w-7/12 rounded-3xl overflow-hidden h-96 flex flex-col border border-slate-200 dark:border-primary-foreground">
+              {Project.map((item, index) => (
+                <div
+                  key={index}
+                  className="w-full h-full shrink-0 flex items-center justify-center p-4 duration-300"
+                  style={{
+                    transform: `translateY(-${active * 100}%)`,
+                  }}
+                >
+                  <WorkWithCarousel data={item.image} />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

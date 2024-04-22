@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import chevronUp from "/chevronUp.png";
 import Image from "next/image";
 
 type WorkWithCarouselProps = {

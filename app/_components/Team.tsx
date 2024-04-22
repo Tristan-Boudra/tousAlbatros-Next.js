@@ -14,8 +14,8 @@ export const Team = (props: TeamProps) => {
   const team = props.data;
 
   return (
-    <>
-      <div className="bg-[#D8F2FA] w-max rounded-full">
+    <div className="px-5 md:px-0">
+      <div className="bg-[#D8F2FA] dark:bg-primary-foreground w-max rounded-full">
         <p className="text-primary px-3 py-2 w-auto text-xs">Equipe</p>
       </div>
       <h1 className="text-2xl md:text-4xl text-accent-foreground font-bold mt-4">
@@ -32,17 +32,17 @@ export const Team = (props: TeamProps) => {
                 width={500}
                 height={500}
               />
-              <div className="text-team font-medium text-xl text-quaternary absolute top-0 left-5 mt-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="text-team font-medium text-xl text-accent-foreground absolute top-0 left-5 mt-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 {item.name}
               </div>
-              <div className="text-team-role absolute top-10 left-5 mt-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="text-team-role text-muted-foreground absolute top-10 left-5 mt-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 {item.role}
               </div>
             </div>
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
