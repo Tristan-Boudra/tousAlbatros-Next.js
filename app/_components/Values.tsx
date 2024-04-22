@@ -18,7 +18,7 @@ export const Values = () => {
           <div className="flex flex-col lg:flex-row items-center">
             <ValuesWithImage data={valuesMiddle[0]} />
             <Image
-              src="/value.png"
+              src="/aPropos/value.png"
               className="w-64 h-42 mx-auto md:mx-0 py-10 md:py-0 md:w-auto md:h-52 md:my-10 lg:w-96 lg:h-64 top-0"
               alt="Background header"
               width={500}

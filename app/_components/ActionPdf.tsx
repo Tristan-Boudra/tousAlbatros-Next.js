@@ -6,6 +6,7 @@ interface ActionPdfProps {
     icon: React.ReactNode;
     title: string;
     subtitle: string;
+    linkPdf: string;
   }[];
 }
 

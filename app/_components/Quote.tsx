@@ -18,7 +18,7 @@ export const Quote = () => {
         <p className="text-sm mt-5">Albert Einstein</p>
       </div>
       <Image
-        src={"/quote.png"}
+        src={"/aPropos/quote.png"}
         className="w-96 h-64 top-0 object-cover"
         alt="Background header"
         width={500}
