@@ -18,12 +18,12 @@ export const Herro = () => {
     {
       id: 1,
       src: "/hero/atelier1.jpeg",
-      alt: "Vercel",
+      alt: "Atelier éducatif 1",
     },
     {
       id: 2,
       src: "/hero/atelier2.jpeg",
-      alt: "Vercel",
+      alt: "Atelier éducatif 2",
     },
   ];
   return (
@@ -52,7 +52,7 @@ export const Herro = () => {
             <div className="mt-32 flex items-center justify-center md:justify-start gap-x-6">
               <Link
                 href="/contact"
-                className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm"
+                className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-accent-foreground shadow-sm"
               >
                 Nous contacter
               </Link>

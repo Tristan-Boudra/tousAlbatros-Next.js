@@ -62,7 +62,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between w-full items-center mt-10 gap-10 md:gap-0 max-w-screen-xl mx-auto">
-        <p className="text-[#64748B] text-center">
+        <p className="text-muted-foreground text-center">
           © {currentYear}. Tous droits réservés |{" "}
           <Link href="/mentionsLegales">Mentions légales</Link>
         </p>
