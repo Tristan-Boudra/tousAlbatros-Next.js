@@ -19,3 +19,7 @@ To launch the website locally, follow these simple steps:
 3- Open http://localhost:3000 in your preferred web browser.
 
 Feel free to explore, engage, and be a part of the TousAlbatros journey.
+
+## Author
+
+Boudra Tristan
