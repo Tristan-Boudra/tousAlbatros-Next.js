@@ -103,6 +103,13 @@ export const Navbar = () => {
           </div>
         </div>
         <div
+          className={`lg:hidden z-10 ${
+            menuOpen ? "block" : "hidden"
+          } absolute right-14 top-8`}
+        >
+          <ModeToggle />
+        </div>
+        <div
           className={`lg:hidden ${
             menuOpen ? "block" : "hidden"
           } absolute right-4 top-4`}

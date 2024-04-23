@@ -11,7 +11,7 @@ export const TextWithDescription: React.FC<TextDescriptionProps> = (props) => {
 
   return (
     <div className="px-5 md:px-0">
-      <div className="bg-[#D8F2FA] dark:bg-primary-foreground w-max rounded-full">
+      <div className="bg-primary-foreground w-max rounded-full">
         <p className="text-primary px-3 py-2 w-auto text-xs">{data.tag}</p>
       </div>
       <div>

@@ -25,11 +25,7 @@ export const Work = () => {
                 <div
                   key={index}
                   className={`border border-slate-300 dark:border-primary-foreground rounded-lg p-4 shadow-sm cursor-pointer duration-300 
-            ${
-              active === index
-                ? "bg-[#D8F2FA] dark:bg-primary-foreground w-full"
-                : "w-11/12"
-            }
+            ${active === index ? "bg-primary-foreground w-full" : "w-11/12"}
             `}
                   onMouseEnter={() => handleShow(index)}
                 >
