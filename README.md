@@ -22,4 +22,4 @@ Feel free to explore, engage, and be a part of the TousAlbatros journey.
 
 ## Author
 
-Boudra Tristan
+Boudra Tristan.
