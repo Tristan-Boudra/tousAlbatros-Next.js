@@ -9,12 +9,20 @@ import {
   NavigationMenuItem,
   NavigationMenuTrigger,
 } from "@/src/components/ui/navigation-menu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, XIcon } from "lucide-react";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 
 export const Navbar = () => {
+  const { theme, setTheme } = useTheme();
+  const [logoSrc, setLogoSrc] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    // Charger le bon logo en fonction du thème lors du montage du composant
+    setLogoSrc(theme === "dark" ? "/logo_dark.png" : "/logo.png");
+  }, [theme]);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -30,7 +38,7 @@ export const Navbar = () => {
         <div className="flex items-center">
           <Link href="/" legacyBehavior passHref>
             <Image
-              src="/logo.png"
+              src={logoSrc}
               className="cursor-pointer"
               width={120}
               height={120}

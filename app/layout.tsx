@@ -4,8 +4,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import { cn } from "@/src/lib/utils";
 import { Navbar } from "@/src/components/layout/Navbar";
-import { Layout } from "@/src/components/layout/Layout";
-import Footer from "@/src/components/layout/Footer";
+import { Footer } from "@/src/components/layout/Footer";
 import { Spacing } from "./_components/Spacing";
 
 const inter = Inter({ subsets: ["latin"] });

@@ -1,16 +1,27 @@
+"use client";
+
 /* eslint-disable react/no-unescaped-entities */
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { theme, setTheme } = useTheme();
+  const [logoSrc, setLogoSrc] = useState("");
+
+  useEffect(() => {
+    // Charger le bon logo en fonction du thème lors du montage du composant
+    setLogoSrc(theme === "dark" ? "/logo_dark.png" : "/logo.png");
+  }, [theme]);
 
   return (
     <footer className="flex flex-col gap-10 md:gap-0 justify-between items-center md:items-start w-full p-10 border-t">
       <div className="flex flex-col md:flex-row gap-10 justify-between w-full max-w-screen-xl mx-auto">
         <div className="flex flex-col md:flex-row gap-10 items-center">
           <Image
-            src="/logo.png"
+            src={logoSrc}
             className="h-20 w-auto"
             alt="Logo TousAbatros"
             width={200}
@@ -66,7 +77,7 @@ export const Footer = () => {
           © {currentYear}. Tous droits réservés |{" "}
           <Link href="/mentionsLegales">Mentions légales</Link>
         </p>
-        <ul className="flex flex-col items-center md:flex-row gap-3 align-center">
+        <ul className="grid grid-cols-2 items-center md:grid-cols-5 gap-3 align-center">
           <li>
             <Link href="/" target="_blank" rel="noreferrer">
               <Image
@@ -127,5 +138,3 @@ export const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;
