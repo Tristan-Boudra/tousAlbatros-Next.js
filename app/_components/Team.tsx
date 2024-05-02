@@ -14,7 +14,7 @@ export const Team = (props: TeamProps) => {
   const team = props.data;
 
   return (
-    <div className="px-5 md:px-0">
+    <div className="px-5 ">
       <div className="bg-primary-foreground w-max rounded-full">
         <p className="text-primary px-3 py-2 w-auto text-xs">Equipe</p>
       </div>

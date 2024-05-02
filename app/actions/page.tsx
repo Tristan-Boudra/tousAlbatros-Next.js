@@ -5,7 +5,7 @@ import { OurActions } from "../_components/OurActions";
 import { Spacing } from "../_components/Spacing";
 import { ActionPdf } from "../_components/ActionPdf";
 import { contentIconPrestation } from "../_components/IconServices";
-import { Work } from "../_components/Work";
+import { Work } from "../../public/work/3/Work";
 
 export default async function RoutePage(props: PageParams<{}>) {
   return (

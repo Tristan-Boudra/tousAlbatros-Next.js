@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Quote = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center relative">
+    <section className="flex flex-col md:flex-row items-center relative px-5">
       <div>
         <p className="text-accent-foreground text-xl md:text-2xl lg:text-3xl font-bold">
           <span className="text-primary text-xl md:text-2xl lg:text-3xl">

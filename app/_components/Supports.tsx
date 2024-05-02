@@ -11,7 +11,7 @@ export const Supports = () => {
   ];
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col px-5">
       <div className="bg-primary-foreground w-max rounded-full">
         <p className="text-primary px-3 py-2 w-auto text-xs">
           Entreprises donatrices
@@ -22,7 +22,7 @@ export const Supports = () => {
           <Image
             key={index}
             src={image}
-            className="w-44 md:w-auto md:h-20 object-cover"
+            className="w-44 md:w-auto md:h-20 object-cover rounded-lg"
             alt={`support ${index + 1}`}
             width={500}
             height={500}

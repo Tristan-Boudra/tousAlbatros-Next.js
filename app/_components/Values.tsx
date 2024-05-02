@@ -5,7 +5,7 @@ import { ValueCard } from "./ValueCard";
 
 export const Values = () => {
   return (
-    <section className="flex flex-col relative px-5 md:px-0">
+    <section className="flex flex-col relative px-5 ">
       <div className="bg-primary-foreground w-max rounded-full">
         <p className="text-primary px-3 py-2 w-auto text-xs">Nos valeurs</p>
       </div>
@@ -19,13 +19,14 @@ export const Values = () => {
             <ValuesWithImage data={valuesMiddle[0]} />
             <Image
               src="/aPropos/value.png"
-              className="w-64 h-42 mx-auto md:mx-0 py-10 md:py-0 md:w-auto md:h-52 md:my-10 lg:w-96 lg:h-64 top-0"
+              className="w-full md:w-1/2 lg:w-1/4 mx-auto py-10 max-w-xs md:max-w-none lg:max-w-full"
               alt="Background header"
               width={500}
               height={500}
             />
             <ValuesWithImage data={valuesMiddle[1]} />
           </div>
+
           <ValueCard data={valuesBottom} />
         </div>
       </div>

@@ -20,7 +20,6 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    // Charger le bon logo en fonction du thème lors du montage du composant
     setLogoSrc(theme === "dark" ? "/logo_dark.png" : "/logo.png");
   }, [theme]);
 
@@ -33,18 +32,20 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="w-full border-b border-border py-1">
-      <Layout className="flex flex-row items-center justify-between px-4 py-2">
+    <nav className="w-full border-b border-border px-5 py-1">
+      <Layout className="flex flex-row items-center justify-between py-2">
         <div className="flex items-center">
-          <Link href="/" legacyBehavior passHref>
-            <Image
-              src={logoSrc}
-              className="cursor-pointer"
-              width={120}
-              height={120}
-              alt="Tous Albatros logo"
-            />
-          </Link>
+          {logoSrc && (
+            <Link href="/" legacyBehavior passHref>
+              <Image
+                src={logoSrc}
+                className="cursor-pointer"
+                width={120}
+                height={120}
+                alt="Tous Albatros logo"
+              />
+            </Link>
+          )}
         </div>
         <div className="block lg:hidden relative z-40">
           <button

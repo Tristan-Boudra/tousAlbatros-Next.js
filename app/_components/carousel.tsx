@@ -37,14 +37,14 @@ export const CarouselComponent = () => {
           {reviewsWithImages.map((item) => (
             <CarouselItem
               key={item.id}
-              className="pl-1 md:basis-1/2 lg:basis-1/3"
+              className="pl-5 md:pl-10 lg:pl-14 md:basis-1/2 lg:basis-1/3"
             >
               <div className="p-1">
                 <Card className="flex flex-col justify-center items-center text-center border rounded-xl w-full md:w-60 lg:w-72 p-5 relative h-96">
                   <Image
                     src={item.image}
-                    className="h-25 w-auto absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/4 rounded-full"
-                    alt="Logo TousAlbatros"
+                    className="h-24 w-auto absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/4 rounded-full"
+                    alt="Image de profil de l'auteur"
                     width={100}
                     height={100}
                   />

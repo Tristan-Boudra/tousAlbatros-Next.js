@@ -1,5 +1,6 @@
 "use client";
 
+import { SnapchatIcon } from "@/public/footer/SnapchatIcon";
 /* eslint-disable react/no-unescaped-entities */
 import { useTheme } from "next-themes";
 import Image from "next/image";
@@ -10,23 +11,33 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
   const { theme, setTheme } = useTheme();
   const [logoSrc, setLogoSrc] = useState("");
+  const [instagramSrc, setInstagramSrc] = useState("");
 
   useEffect(() => {
     // Charger le bon logo en fonction du thème lors du montage du composant
     setLogoSrc(theme === "dark" ? "/logo_dark.png" : "/logo.png");
+    setInstagramSrc(
+      theme === "dark"
+        ? "/footer/instagram_dark.svg"
+        : "/footer/instagram_light.svg"
+    );
   }, [theme]);
 
   return (
     <footer className="flex flex-col gap-10 md:gap-0 justify-between items-center md:items-start w-full p-10 border-t">
       <div className="flex flex-col md:flex-row gap-10 justify-between w-full max-w-screen-xl mx-auto">
         <div className="flex flex-col md:flex-row gap-10 items-center">
-          <Image
-            src={logoSrc}
-            className="h-20 w-auto"
-            alt="Logo TousAbatros"
-            width={200}
-            height={200}
-          />
+          {logoSrc && (
+            <Link href="/" legacyBehavior passHref>
+              <Image
+                src={logoSrc}
+                className="cursor-pointer"
+                width={120}
+                height={120}
+                alt="Tous Albatros logo"
+              />
+            </Link>
+          )}
           <p className="text-muted-foreground font-medium text-center md:text-left">
             <span className="text-primary text-xl font-bold">
               Tous Albatros
@@ -57,10 +68,7 @@ export const Footer = () => {
             <h3 className="text-accent-foreground text-lg font-bold">
               Contact
             </h3>
-            <Link
-              href="telto:0616133806"
-              className="text-muted-foreground mt-3"
-            >
+            <Link href="tel:0616133806" className="text-muted-foreground mt-3">
               06 16 13 38 06
             </Link>
             <Link
@@ -81,7 +89,7 @@ export const Footer = () => {
           <li>
             <Link href="/" target="_blank" rel="noreferrer">
               <Image
-                src="/brands/linkedin.png"
+                src="/footer/linkedin.svg"
                 className="h-10 w-10"
                 alt="Logo Linkedin"
                 width={100}
@@ -92,7 +100,7 @@ export const Footer = () => {
           <li>
             <Link href="/" target="_blank" rel="noreferrer">
               <Image
-                src="/brands/facebook.png"
+                src="/footer/facebook.svg"
                 className="h-10 w-10"
                 alt="Logo Facebook"
                 width={100}
@@ -101,20 +109,22 @@ export const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href="/" target="_blank" rel="noreferrer">
-              <Image
-                src="/brands/instagram.png"
-                className="h-10 w-10"
-                alt="Logo Instagram"
-                width={100}
-                height={100}
-              />
-            </Link>
+            {instagramSrc && (
+              <Link href="/" target="_blank" rel="noreferrer">
+                <Image
+                  src={instagramSrc}
+                  className="h-10 w-10"
+                  alt="Logo Instagram"
+                  width={100}
+                  height={100}
+                />
+              </Link>
+            )}
           </li>
           <li>
             <Link href="/" target="_blank" rel="noreferrer">
               <Image
-                src="/brands/tiktok.png"
+                src="/footer/tiktok.svg"
                 className="h-10 w-10"
                 alt="Logo Tiktok"
                 width={100}
@@ -125,12 +135,13 @@ export const Footer = () => {
           <li>
             <Link href="/" target="_blank" rel="noreferrer">
               <Image
-                src="/brands/snapchat.png"
+                src="/footer/snapchat.svg"
                 className="h-9 w-9"
                 alt="Logo Snapchat"
                 width={100}
                 height={100}
               />
+              {/* <SnapchatIcon /> */}
             </Link>
           </li>
         </ul>

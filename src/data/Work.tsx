@@ -8,15 +8,33 @@ export const Project = [
     image: [
       {
         id: 0,
-        image: "/supports/1.png",
+        image: "/work/1/stage1.png",
+        alt: "Le Stage d’Envol : à la Découverte de Soi – pour l’insertion des jeunes",
       },
       {
         id: 1,
-        image: "/supports/2.png",
+        image: "/work/1/stage2.png",
+        alt: "Le Stage d’Envol : à la Découverte de Soi – pour l’insertion des jeunes",
       },
       {
         id: 2,
-        image: "/supports/3.png",
+        image: "/work/1/stage3.png",
+        alt: "Le Stage d’Envol : à la Découverte de Soi – pour l’insertion des jeunes",
+      },
+      {
+        id: 3,
+        image: "/work/1/stage4.png",
+        alt: "Le Stage d’Envol : à la Découverte de Soi – pour l’insertion des jeunes",
+      },
+      {
+        id: 4,
+        image: "/work/1/stage5.png",
+        alt: "Le Stage d’Envol : à la Découverte de Soi – pour l’insertion des jeunes",
+      },
+      {
+        id: 5,
+        image: "/work/1/stage6.png",
+        alt: "Le Stage d’Envol : à la Découverte de Soi – pour l’insertion des jeunes",
       },
     ],
   },
@@ -29,11 +47,33 @@ export const Project = [
     image: [
       {
         id: 0,
-        image: "/supports/3.png",
+        image: "/work/2/sentinelles1.png",
+        alt: "Les Sentinelles – pour prévenir la dépression et le suicide des jeunes",
       },
       {
         id: 1,
-        image: "/supports/4.png",
+        image: "/work/2/sentinelles2.png",
+        alt: "Les Sentinelles – pour prévenir la dépression et le suicide des jeunes",
+      },
+      {
+        id: 2,
+        image: "/work/2/sentinelles3.png",
+        alt: "Les Sentinelles – pour prévenir la dépression et le suicide des jeunes",
+      },
+      {
+        id: 3,
+        image: "/work/2/sentinelles4.png",
+        alt: "Les Sentinelles – pour prévenir la dépression et le suicide des jeunes",
+      },
+      {
+        id: 4,
+        image: "/work/2/sentinelles5.png",
+        alt: "Les Sentinelles – pour prévenir la dépression et le suicide des jeunes",
+      },
+      {
+        id: 5,
+        image: "/work/2/sentinelles6.png",
+        alt: "Les Sentinelles – pour prévenir la dépression et le suicide des jeunes",
       },
     ],
   },
@@ -45,15 +85,33 @@ export const Project = [
     image: [
       {
         id: 0,
-        image: "/supports/1.png",
+        image: "/work/3/media1.png",
+        alt: "De soi dans chaque média – pour éduquer à l'image et aux médias",
       },
       {
         id: 1,
-        image: "/supports/2.png",
+        image: "/work/3/media2.png",
+        alt: "De soi dans chaque média – pour éduquer à l'image et aux médias",
       },
       {
         id: 2,
-        image: "/supports/3.png",
+        image: "/work/3/media3.png",
+        alt: "De soi dans chaque média – pour éduquer à l'image et aux médias",
+      },
+      {
+        id: 3,
+        image: "/work/3/media4.png",
+        alt: "De soi dans chaque média – pour éduquer à l'image et aux médias",
+      },
+      {
+        id: 4,
+        image: "/work/3/media5.png",
+        alt: "De soi dans chaque média – pour éduquer à l'image et aux médias",
+      },
+      {
+        id: 5,
+        image: "/work/3/media6.png",
+        alt: "De soi dans chaque média – pour éduquer à l'image et aux médias",
       },
     ],
   },

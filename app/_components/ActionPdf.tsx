@@ -14,7 +14,7 @@ export const ActionPdf = (props: ActionPdfProps) => {
   const contentIcon = props.data;
   return (
     <>
-      <div className="px-5 md:px-0">
+      <div className="px-5 ">
         <p className="font-medium text-sm text-accent-foreground">
           Cliquez sur notre brochure pour visualiser notre offre d’ateliers
           d’Envol.

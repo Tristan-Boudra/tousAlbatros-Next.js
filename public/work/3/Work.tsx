@@ -2,7 +2,7 @@
 
 import { Project } from "@/src/data/Work";
 import React from "react";
-import { WorkWithCarousel } from "./WorkWithImages";
+import { WorkWithCarousel } from "../../../app/_components/WorkWithImages";
 
 export const Work = () => {
   const [active, setActive] = React.useState(0);
@@ -11,22 +11,24 @@ export const Work = () => {
   };
   return (
     <>
-      <div className="px-5 md:px-0">
+      <div className="px-5">
         <div className="bg-[#D8F2FA] bg-primary-foreground w-max rounded-full">
           <p className="text-primary px-3 py-2 w-auto text-xs">Ateliers</p>
         </div>
-        <h1 className="text-xl md:text-3xl lg:text-4xl text-accent-foreground font-bold mt-4">
+        <h1 className="text-2xl md:text-4xl text-accent-foreground font-bold mt-4">
           Nos programmes d’ateliers les plus demandés
         </h1>
         <div className="flex items-center justify-center mt-10">
           <div className="z-10 max-w-7xl gap-10 flex flex-col md:flex-row w-full items-center justify-between md:h-[560px]">
-            <div className="md:w-5/12 space-y-3">
+            <div className="w-full md:w-2/3 flex flex-col gap-5">
               {Project.map((item, index) => (
                 <div
                   key={index}
                   className={`border border-slate-300 dark:border-primary-foreground rounded-lg p-4 shadow-sm cursor-pointer duration-300 
-            ${active === index ? "bg-primary-foreground w-full" : "w-11/12"}
-            `}
+                  ${
+                    active === index ? "bg-primary-foreground w-full" : "w-full"
+                  }
+              `}
                   onMouseEnter={() => handleShow(index)}
                 >
                   <h1 className="text-lg md:text-xl lg:text-2xl font-bold text-accent-foreground">
@@ -40,7 +42,7 @@ export const Work = () => {
                 </div>
               ))}
             </div>
-            <div className="md:w-7/12 rounded-3xl overflow-hidden h-96 flex flex-col border border-slate-200 dark:border-primary-foreground">
+            <div className="w-full md:w-1/3 overflow-hidden h-96 flex flex-col border border-slate-200 dark:border-primary-foreground rounded-lg">
               {Project.map((item, index) => (
                 <div
                   key={index}

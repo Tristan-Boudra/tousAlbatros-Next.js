@@ -21,7 +21,7 @@ export default function Home() {
       <Spacing size="md" />
       <TextWithDescription data={contentDescription[1]} />
       <Spacing size="md" />
-      <div className="flex justify-center px-5 md:px-0">
+      <div className="flex justify-center px-5 ">
         <CarouselComponent />
       </div>
       <Spacing size="md" />

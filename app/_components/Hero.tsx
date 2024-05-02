@@ -43,7 +43,7 @@ export const Herro = () => {
         </div>
         <div className="mx-auto py-32 sm:pb-24 sm:pt-10 lg:pb-32 lg:pt-10 flex flex-col md:flex-row justify-center items-center gap-20 md:gap-0">
           <div className="text-center md:text-left md:pr-20 md:w-1/2 w-full flex flex-col">
-            <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-7xl">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-primary">
               Tous Albatros
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
