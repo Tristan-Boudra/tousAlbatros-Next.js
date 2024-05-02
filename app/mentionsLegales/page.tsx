@@ -22,7 +22,12 @@ export default async function RoutePage(props: PageParams<{}>) {
             <li>
               RCS: 123 456 789 | Code NAF: 123456 | Capital social: 123 456 €
             </li>
-            <li>N° de téléphone: 06 16 13 38 06</li>
+            <li>
+              N° de téléphone:{" "}
+              <a href="tel:07 77 11 71 98" className="hover:text-primary">
+                07 77 11 71 98
+              </a>
+            </li>
             <li>
               Adresse e-mail:{" "}
               <a
@@ -32,7 +37,7 @@ export default async function RoutePage(props: PageParams<{}>) {
                 contact@tousalbatros.fr
               </a>
             </li>
-            <li>Dirigeant: Mylène</li>
+            <li>Dirigeante: Mme Heraudet Mylène</li>
           </ul>
         </div>
       </section>
@@ -122,9 +127,15 @@ export default async function RoutePage(props: PageParams<{}>) {
           <br /> Les données sont conservées pour une durée raisonnable de 10
           ans. <br />
           Pour toute demande de suppression, de rectification ou d'accès aux
-          données, veuillez effectuer une demande par email à :
-          contact@tousalbatros.fr ou par courrier à l'adresse : Maison des
-          Associations, 93 la Canebière, boite aux lettre n°160, 13001 MARSEILLE
+          données, veuillez effectuer une demande par email à :{" "}
+          <a
+            href="mailto:contact@tousalbatros.fr"
+            className="hover:text-primary"
+          >
+            contact@tousalbatros.fr
+          </a>{" "}
+          ou par courrier à l'adresse : Maison des Associations, 93 la
+          Canebière, boite aux lettre n°160, 13001 MARSEILLE
         </p>
       </section>
       <section className="pt-20 flex flex-col">

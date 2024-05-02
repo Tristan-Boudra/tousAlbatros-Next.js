@@ -1,6 +1,5 @@
 "use client";
 
-import { SnapchatIcon } from "@/public/footer/SnapchatIcon";
 /* eslint-disable react/no-unescaped-entities */
 import { useTheme } from "next-themes";
 import Image from "next/image";
@@ -14,12 +13,11 @@ export const Footer = () => {
   const [instagramSrc, setInstagramSrc] = useState("");
 
   useEffect(() => {
-    // Charger le bon logo en fonction du thème lors du montage du composant
     setLogoSrc(theme === "dark" ? "/logo_dark.png" : "/logo.png");
     setInstagramSrc(
       theme === "dark"
-        ? "/footer/instagram_dark.svg"
-        : "/footer/instagram_light.svg"
+        ? "/footer/Instagram_dark.svg"
+        : "/footer/Instagram_light.svg"
     );
   }, [theme]);
 
@@ -87,7 +85,11 @@ export const Footer = () => {
         </p>
         <ul className="grid grid-cols-2 items-center md:grid-cols-5 gap-3 align-center">
           <li>
-            <Link href="/" target="_blank" rel="noreferrer">
+            <Link
+              href="https://www.linkedin.com/company/tousalbatros/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image
                 src="/footer/linkedin.svg"
                 className="h-10 w-10"
@@ -98,7 +100,11 @@ export const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href="/" target="_blank" rel="noreferrer">
+            <Link
+              href="https://www.facebook.com/tousalbatros"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image
                 src="/footer/facebook.svg"
                 className="h-10 w-10"
@@ -110,7 +116,11 @@ export const Footer = () => {
           </li>
           <li>
             {instagramSrc && (
-              <Link href="/" target="_blank" rel="noreferrer">
+              <Link
+                href="https://www.instagram.com/tousalbatros/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Image
                   src={instagramSrc}
                   className="h-10 w-10"
@@ -122,7 +132,11 @@ export const Footer = () => {
             )}
           </li>
           <li>
-            <Link href="/" target="_blank" rel="noreferrer">
+            <Link
+              href="https://www.tiktok.com/@tousalbatros?lang=fr"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image
                 src="/footer/tiktok.svg"
                 className="h-10 w-10"
@@ -141,7 +155,6 @@ export const Footer = () => {
                 width={100}
                 height={100}
               />
-              {/* <SnapchatIcon /> */}
             </Link>
           </li>
         </ul>
