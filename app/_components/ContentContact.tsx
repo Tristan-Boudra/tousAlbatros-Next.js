@@ -6,18 +6,15 @@ import { FormContact } from "./FormContact";
 import { useEffect, useState } from "react";
 
 export const ContentContact = () => {
-  const [imageSize, setImageSize] = useState(200); // Taille initiale de l'image
+  const [imageSize, setImageSize] = useState(200);
 
   useEffect(() => {
     const handleResize = () => {
-      // Mettez à jour la taille de l'image en fonction de la largeur de la fenêtre
       setImageSize(window.innerWidth < 640 ? 200 : 400);
     };
 
-    // Ajoutez un écouteur d'événement pour détecter les changements de taille de la fenêtre
     window.addEventListener("resize", handleResize);
 
-    // Retirez l'écouteur d'événement lors du démontage du composant
     return () => {
       window.removeEventListener("resize", handleResize);
     };

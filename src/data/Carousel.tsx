@@ -49,7 +49,7 @@ const reviews = [
   },
   {
     id: 8,
-    name: "Adulte présent",
+    name: "Adulte présent·e",
     description:
       "« C’était vraiment bien, interactif et ludique tout en abordant des sujets complexes et profonds »",
   },

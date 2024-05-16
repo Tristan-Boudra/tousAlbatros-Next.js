@@ -66,7 +66,7 @@ export const valuesTop = [
   {
     id: 0,
     icon: UserCogIcon,
-    title: "Principe d'inperfection",
+    title: "Principe d'imperfection",
     subtitle:
       "J’ai le droit de ne pas savoir, de ne pas comprendre, de questionner, de demander conseils, de me tromper, d’être maladroit·e et d’être excusé·e.",
   },
@@ -75,7 +75,7 @@ export const valuesTop = [
     icon: HeartHandIcon,
     title: "Principe de confiance",
     subtitle:
-      "J’accueille la différence et l’histoire de chacun, j’accorde une confiance a priori en dépassant mes propres préjugés.",
+      "J’accueille la différence et l’histoire de chacun·e, j’accorde une confiance a priori en dépassant mes propres préjugés.",
   },
   {
     id: 2,

@@ -4,6 +4,7 @@ import React from "react";
 type TeamProps = {
   data: {
     id: number;
+    genre?: string;
     name: string;
     role: string;
     image: string;
@@ -19,7 +20,7 @@ export const Team = (props: TeamProps) => {
         <p className="text-primary px-3 py-2 w-auto text-xs">Equipe</p>
       </div>
       <h1 className="text-2xl md:text-4xl text-accent-foreground font-bold mt-4">
-        Notre équipe de passionés
+        Notre équipe de passionnés
       </h1>
       <div className="flex flex-wrap justify-center md:justify-start gap-10 mt-10">
         {team.map((item) => (

@@ -40,8 +40,7 @@ export const Project = [
   },
   {
     id: 1,
-    title:
-      "Les Sentinelles – pour prévenir la dépression et le suicide des jeunes",
+    title: "Les Jeunes Sentinelles - pour prévenir la dépression et le suicide",
     description:
       "Programme de 4 ateliers pour devenir gardien·ne de sa santé mentale et de celle des autres : prendre conscience de soi et de ses ressources intérieures, libérer sa parole et pratiquer l’écoute, apprendre à faire confiance et à demander de l’aide.",
     image: [

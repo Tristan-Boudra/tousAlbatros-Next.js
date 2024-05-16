@@ -16,6 +16,7 @@ export const WorkWithCarousel = (props: WorkWithCarouselProps) => {
   const dataImg = props.data;
   const allImages = dataImg.map((img) => img.image);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % allImages.length);
   };
@@ -32,6 +33,13 @@ export const WorkWithCarousel = (props: WorkWithCarouselProps) => {
   useEffect(() => {
     setChevronSrc(theme === "dark" ? "/chevronUp_dark.svg" : "/chevronUp.png");
   }, [theme]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextImage();
+    }, 3000);
+    return () => clearInterval(interval);
+  });
 
   return (
     <ul className="flex flex-row w-full relative justify-center items-center gap-10 flex-wrap">

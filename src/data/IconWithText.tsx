@@ -34,25 +34,25 @@ export const contentIcon = [
   {
     id: 0,
     icon: TrendingUpIcon,
-    title: "+ 8 ans",
+    title: "+ 5 ans",
     subtitle: "Expérience",
   },
   {
     id: 1,
     icon: UsersIcon,
-    title: "100 %",
-    subtitle: "Engagés",
+    title: "272",
+    subtitle: "Ateliers animés",
   },
   {
     id: 2,
     icon: BadgeCheckIcon,
-    title: "100 %",
-    subtitle: "Réactifs",
+    title: "3031",
+    subtitle: "Jeunes participants",
   },
   {
     id: 3,
     icon: LightbulbIcon,
-    title: "∞",
-    subtitle: "Projets innovants",
+    title: "100 %",
+    subtitle: "Créativité",
   },
 ];

@@ -14,7 +14,7 @@ export const Supports = () => {
     <div className="flex flex-col px-5">
       <div className="bg-primary-foreground w-max rounded-full">
         <p className="text-primary px-3 py-2 w-auto text-xs">
-          Entreprises donatrices
+          Ils nous soutiennent
         </p>
       </div>
       <div className="flex flex-col md:flex-row flex-wrap items-center gap-5 relative w-full mt-10">

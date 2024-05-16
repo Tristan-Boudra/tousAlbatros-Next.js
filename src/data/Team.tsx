@@ -13,9 +13,9 @@ export const team = [
   },
   {
     id: 2,
+    genre: "female",
     name: "Blandine",
     role: "Trésorière",
-    image: "/logo.png",
   },
   {
     id: 3,
@@ -49,15 +49,15 @@ export const team = [
   },
   {
     id: 8,
+    genre: "female",
     name: "Simone",
     role: "Volontaire en service civique",
-    image: "/logo.png",
   },
   {
     id: 9,
+    genre: "female",
     name: "Clara",
     role: "Assistance de service social stagiaire",
-    image: "/logo.png",
   },
   {
     id: 10,
@@ -97,13 +97,13 @@ export const team = [
   },
   {
     id: 16,
+    genre: "female",
     name: "Céline C.",
     role: "Administratrice",
-    image: "/logo.png",
   },
   {
     id: 17,
-    name: "Athénas",
+    name: "Athénaïs",
     role: "Bénévole",
     image: "/teams/4. Athénas - Bénévole.jpg",
   },
@@ -115,15 +115,15 @@ export const team = [
   },
   {
     id: 19,
+    genre: "male",
     name: "Michèle",
     role: "Bénévole",
-    image: "/logo.png",
   },
   {
     id: 20,
+    genre: "male",
     name: "Pierre",
     role: "Bénévole",
-    image: "/logo.png",
   },
   {
     id: 21,
@@ -132,3 +132,17 @@ export const team = [
     image: "/teams/4. Tristan - Bénévole.jpg",
   },
 ];
+
+export const teamsWithImages = team.map((member) => {
+  if (!member.image) {
+    const imageNumber =
+      member.genre === "male"
+        ? Math.floor(Math.random() * 50) + 1
+        : Math.floor(Math.random() * 49) + 51;
+    return {
+      ...member,
+      image: `https://avatar.iran.liara.run/public/${imageNumber}`,
+    };
+  }
+  return member;
+});

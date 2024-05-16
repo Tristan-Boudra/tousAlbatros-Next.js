@@ -22,7 +22,7 @@ export const CarouselComponent = () => {
           <p className="text-primary px-3 py-2 w-auto text-xs">Avis</p>
         </div>
         <h1 className="text-2xl md:text-4xl text-accent-foreground font-bold mt-4">
-          Les avis de nos jeunes
+          Vos avis sur Tous Albatros
         </h1>
       </div>
       <Carousel

@@ -44,23 +44,41 @@ export const Footer = () => {
             Pour l'envol de la jeunesse
           </p>
         </div>
-        <div className="flex flex-col md:flex-row gap-10">
+        <div className="flex flex-col md:flex-row">
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-accent-foreground text-lg font-bold">
               Où sommes-nous ?
             </h3>
-            <p className="text-muted-foreground w-1/2 md:w-64 text-center md:text-left mt-3">
-              Maison des Associations,
-            </p>
-            <p className="text-muted-foreground w-1/2 md:w-64 text-center md:text-left">
-              93 la Canebière,
-            </p>
-            <p className="text-muted-foreground w-1/2 md:w-64 text-center md:text-left">
-              boite aux lettre n°160,
-            </p>
-            <p className="text-muted-foreground w-1/2 md:w-64 text-center md:text-left">
-              13001 MARSEILLE
-            </p>
+            <div className="flex flex-rox gap-5">
+              <div>
+                <h4 className="text-accent-foreground text-md font-bold mt-3">
+                  Siège social
+                </h4>
+                <p className="text-muted-foreground w-1/2 md:w-64 text-center md:text-left">
+                  Maison des Associations,
+                </p>
+                <p className="text-muted-foreground w-1/2 md:w-64 text-center md:text-left">
+                  93 la Canebière,
+                </p>
+                <p className="text-muted-foreground w-1/2 md:w-64 text-center md:text-left">
+                  boite aux lettres n°160,
+                </p>
+                <p className="text-muted-foreground w-1/2 md:w-64 text-center md:text-left">
+                  13001 MARSEILLE
+                </p>
+              </div>
+              <div>
+                <h4 className="text-accent-foreground text-md font-bold mt-3">
+                  Refuge des Albatros
+                </h4>
+                <p className="text-muted-foreground w-1/2 md:w-64 text-center md:text-left">
+                  46 rue des Abeilles,
+                </p>
+                <p className="text-muted-foreground w-1/2 md:w-64 text-center md:text-left">
+                  13001 MARSEILLE
+                </p>
+              </div>
+            </div>
           </div>
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-accent-foreground text-lg font-bold">

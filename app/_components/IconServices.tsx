@@ -1,4 +1,4 @@
-import { File, Library, MessageSquare } from "lucide-react";
+import { File, Library, MessageSquare, Target } from "lucide-react";
 
 const FileIcon = (
   <div className="flex bg-[#FFF9EB] dark:bg-[#241607] w-12 h-12 md:w-16 md:h-16 rounded-lg p-4 content-center items-center">
@@ -28,23 +28,26 @@ export const contentIconPrestation = [
   {
     id: 0,
     icon: FileIcon,
-    title: "Brochure web",
-    subtitle:
-      "Pour télécharger et imprimer la brochure de nos ateliers d'envol",
-    linkPdf: "/documents/test.pdf",
+    title: "Ateliers d'envoi",
+    subtitle: "Pour télécharger et imprimer la brochure",
+    linkPdf: "/documents/brochure-ateliers-d-envol-tous-albatros-2023-2024.pdf",
+    target: "_blank",
   },
   {
     id: 1,
+    icon: LibrairieIcon,
+    title: "Actions éducatives",
+    subtitle: "Pour découvrir nos ateliers financés en collèges",
+    linkPdf:
+      "https://moncompte.departement13.fr/education/actions-educatives/association/80/",
+    target: "_blank",
+  },
+  {
+    id: 2,
     icon: MessageIcon,
     title: "Contact",
     subtitle: "Pour recevoir une proposition d'ateliers sur mesure",
     linkPdf: "/contact",
-  },
-  {
-    id: 2,
-    icon: LibrairieIcon,
-    title: "Actions éducatives",
-    subtitle: "Cliquer pour visualiser la brochure",
-    linkPdf: "/documents/test.pdf",
+    target: "_self",
   },
 ];

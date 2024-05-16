@@ -26,7 +26,9 @@ export const Work = () => {
                   key={index}
                   className={`border border-slate-300 dark:border-primary-foreground rounded-lg p-4 shadow-sm cursor-pointer duration-300 
                   ${
-                    active === index ? "bg-primary-foreground w-full" : "w-full"
+                    active === index
+                      ? "bg-[#D8F2FA] dark:bg-primary-foreground w-full"
+                      : "w-full"
                   }
               `}
                   onMouseEnter={() => handleShow(index)}
@@ -46,7 +48,7 @@ export const Work = () => {
               {Project.map((item, index) => (
                 <div
                   key={index}
-                  className="w-full h-full shrink-0 flex items-center justify-center p-4 duration-300"
+                  className="w-full h-full bg-[#D8F2FA] dark:bg-primary-foreground shrink-0 flex items-center justify-center p-4 duration-300"
                   style={{
                     transform: `translateY(-${active * 100}%)`,
                   }}

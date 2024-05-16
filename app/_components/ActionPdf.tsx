@@ -7,6 +7,7 @@ interface ActionPdfProps {
     title: string;
     subtitle: string;
     linkPdf: string;
+    target: string;
   }[];
 }
 
@@ -25,6 +26,7 @@ export const ActionPdf = (props: ActionPdfProps) => {
               key={item.id}
               href={item.linkPdf}
               className="flex flex-col flex-start md:flex-row md:items-center gap-5 md:gap-0"
+              target={item.target}
             >
               {item.icon}
               <div className="flex flex-col md:ml-3 mt-2 md:mt-0 w-72">

@@ -57,10 +57,10 @@ export const Herro = () => {
                 Nous contacter
               </Link>
               <Link
-                href="/aPropos"
+                href="/actions"
                 className="text-sm font-semibold leading-6 text-foreground"
               >
-                Prestations <span aria-hidden="true">→</span>
+                Nos actions <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>

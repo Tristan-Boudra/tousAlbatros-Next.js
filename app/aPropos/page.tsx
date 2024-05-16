@@ -6,7 +6,7 @@ import { TextWithDescription } from "../_components/TextWithDescription";
 import { contentDescription } from "@/src/data/TextWithDescription";
 import { Values } from "../_components/Values";
 import Team from "../_components/Team";
-import { team } from "@/src/data/Team";
+import { teamsWithImages } from "@/src/data/Team";
 
 export default async function RoutePage(props: PageParams<{}>) {
   return (
@@ -21,7 +21,7 @@ export default async function RoutePage(props: PageParams<{}>) {
       <Spacing size="md" />
       <TextWithDescription data={contentDescription[4]} />
       <Spacing size="md" />
-      <Team data={team} />
+      <Team data={teamsWithImages} />
     </Layout>
   );
 }

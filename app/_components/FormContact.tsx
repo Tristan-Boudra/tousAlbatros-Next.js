@@ -90,7 +90,7 @@ export const FormContact = () => {
         className="mt-5 w-max mx-auto"
         onClick={form.handleSubmit(onSubmit)}
       >
-        Submit
+        Envoyer
       </Button>
     </Form>
   );
