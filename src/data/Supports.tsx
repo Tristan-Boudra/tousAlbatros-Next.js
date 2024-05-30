@@ -1,7 +1,7 @@
 export const Support = [
   {
     id: 0,
-    image: "/supports/Upe13.jpg",
+    image: "/supports/upe13.png",
     background: true,
     description:
       "Janvier-Juin 2018 : Projet « coup de cœur » de la première édition du concours Make the Choice",
