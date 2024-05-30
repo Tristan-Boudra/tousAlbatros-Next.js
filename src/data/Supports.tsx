@@ -1,7 +1,7 @@
 export const Support = [
   {
     id: 0,
-    image: "/supports/Upe13.png",
+    image: "/supports/Upe13.jpg",
     background: true,
     description:
       "Janvier-Juin 2018 : Projet « coup de cœur » de la première édition du concours Make the Choice",
@@ -33,7 +33,7 @@ export const Support = [
   },
   {
     id: 5,
-    image: "/supports/ligue_enseignement.png",
+    image: "/supports/Ligue_enseignement.png",
     background: true,
     description:
       "Juillet 2023 : Affiliation à La Ligue 13, Fédération associative d'éducation populaire",
