@@ -106,14 +106,14 @@ export const valuesMiddle = [
 export const valuesBottom = [
   {
     id: 0,
-    icon: PuzzlePieceIcon,
+    icon: SmileIcon,
     title: "Principe d'auto-réalisation",
     subtitle:
       "Je n’assiste pas mais j’accompagne l’autre vers sa propre réalisation, en valorisant le positif et en transmettant des clefs, et je ne me rends pas indispensable.",
   },
   {
     id: 1,
-    icon: SmileIcon,
+    icon: PuzzlePieceIcon,
     title: "Principe de complémentarité",
     subtitle:
       "J’admets la compétence d’autres personnes, intérieures ou extérieures à l’association, et je n’hésite pas à orienter.",

@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 interface IconData {
   id: number;
-  icon: ReactNode;
+  icon?: ReactNode;
   title: string;
   subtitle: string;
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React from "react";
 
@@ -17,10 +18,10 @@ export const Team = (props: TeamProps) => {
   return (
     <div className="px-5 ">
       <div className="bg-primary-foreground w-max rounded-full">
-        <p className="text-primary px-3 py-2 w-auto text-xs">Equipe</p>
+        <p className="text-primary px-3 py-2 w-auto text-xs">Notre équipe</p>
       </div>
       <h1 className="text-2xl md:text-4xl text-accent-foreground font-bold mt-4">
-        Notre équipe de passionnés
+        Les membres de l'Albateam
       </h1>
       <div className="flex flex-wrap justify-center md:justify-start gap-10 mt-10">
         {team.map((item) => (

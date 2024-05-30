@@ -1,31 +1,69 @@
-export const contentDescription = [
+const origineTousAlbatros = [
   {
     id: 0,
-    tag: "Qui sommes-nous ?",
-    title: "L’Histoire de trois femmes",
     description:
-      "Tous Albatros, c’est d’abord l’histoire de trois femmes qui s’associent pour créer une méthode croisant leurs différentes spécialités : l’accompagnement social, l’animation socio-éducative et le coaching.\n\nParce que construire son futur implique de comprendre sa propre histoire. Tous Albatros conçoit des projets visant à transmettre aux jeunes des clefs d’introspection et de projection.\n\nL’association utilise tous les outils nécessaires au développement de l’autodétermination, de l’épanouissement et de la capacité d’agir des adolescents.",
+      "<strong class='text-accent-foreground'>Une métaphore :</strong> Le nom de l’association porte la référence baudelairienne à « L’Albatros » dont le potentiel est gâché par un environnement qui lui est défavorable. Nous sommes « Tous Albatros » car chaque individu possède des forces et des vulnérabilités. L’enjeu est de les connaître et d’identifier les champs dans lesquelles elles s’expriment ou se manifestent.",
   },
   {
     id: 1,
-    tag: "The Choice",
-    title: "Coup de coeur The Choice",
+    description:
+      "<strong class='text-accent-foreground'>Une inquiétude :</strong> Favoriser l’autodétermination et l’autonomie de la jeunesse représente aujourd’hui un impératif de civilisation pour faire face aux enjeux de demain liés à la place et au rôle de l’humain face aux problématiques notamment technologiques et environnementales. Seule une jeunesse consciente et outillée sera parée pour la suite.",
+  },
+  {
+    id: 2,
+    description:
+      "<strong class='text-accent-foreground'>Un besoin :</strong> « Qui suis-je ? Quel est mon rêve ? Quel sens donner à ma vie ? Comment trouver ma place ? » Notre démarche est d’accompagner les adolescents dans la prise de conscience de leur potentiel et dans la construction de leur identité d’adulte de demain. Stimuler l’éveil de la curiosité est la première étape pour s’envoler comme l’Albatros.",
+  },
+  {
+    id: 3,
+    description:
+      "<strong class='text-accent-foreground'>Un espoir :</strong> C’est l’idée de l’essaimage. Initions à petite échelle des réflexions et des méthodes qui inspireront des évolutions plus grandes. Semons des graines, offrons aux jeunes les moyens d’apporter eux-mêmes les changements qu’ils attendent. Créons des espaces collectifs de liberté favorables à l’émergence du savoir par les jeunes pour les jeunes.",
+  },
+  {
+    id: 4,
+    description:
+      "<strong class='text-accent-foreground'>Une générosité :</strong> Chaque Albatros qui rejoint l’équipe fait escale pour ses raisons, avec ses bagages et ses aspirations, empli du désir d’offrir l’accueil et l’accompagnement qu’il ou elle aurait aimé recevoir. Chaque membre de l’Albateam apporte son regard et sa créativité, pour protéger cet espace refuge destiné à tous les jeunes qui vivent le décalage de l’Albatros.",
+  },
+];
+
+const autodeterminationTousAlbatros = [
+  {
+    id: 0,
+    description:
+      "Tous Albatros est une association loi 1901, fondée le 12 mars 2019 par trois femmes, qui a pour objet social de promouvoir l’autodétermination des jeunes, notamment grâce à la stimulation de leur <strong class='text-accent-foreground'>curiosité</strong>, à l’apprentissage de l’autodidaxie, au développement de l’esprit critique et de l’<strong class='text-accent-foreground'>autonomie</strong> ainsi qu’à la révélation de leurs <strong class='text-accent-foreground'>potentiels</strong> propres. Tous Albatros conçoit essentiellement des <strong class='text-accent-foreground'>ateliers collectifs</strong> dits « Ateliers d’Envol ». Nos intervenant⸱es participent au même titre que le groupe et ont pour mission, grâce à <strong class='text-accent-foreground'>l’expérience, le jeu et l’art de poser des questions</strong> (maïeutique), de permettre aux jeunes de <strong class='text-accent-foreground'>trouver leurs propres clés</strong> et de se les <strong class='text-accent-foreground'>échanger entre pairs.</strong>",
+  },
+];
+
+export const contentDescription = [
+  {
+    id: 0,
+    tag: "Objet social",
+    title: "L’autodétermination des Jeunes",
+    description: autodeterminationTousAlbatros
+      .map((item) => `<p>${item.description}</p>`)
+      .join(""),
+  },
+  {
+    id: 1,
+    tag: "Objectifs pédagogiques",
+    title: "La préparation de l'envol",
     description:
       "Tous Albatros est un projet « Coup de Cœur »​ de la saison 1 de Make The Choice (UPE13), coaché par Erilia France et accompagné par Inter-Made.",
   },
   {
     id: 2,
-    tag: "Notre Histoire",
-    title: "NOTRE HISTOIRE",
-    description:
-      "Tous Albatros, c’est d’abord l’histoire de trois femmes qui s’associent pour créer une méthode croisant leurs différentes spécialités : l’accompagnement social, l’animation socio-éducative et le coaching. Parce que construire son futur implique de comprendre sa propre histoire, Tous Albatros conçoit des projets visant à transmettre aux jeunes des clefs d’introspection et de projection. L’association utilise tous les outils nécessaires au développement de l’autodétermination, de l’épanouissement et de la capacité d’agir des adolescents. Chaque Albatros a un potentiel qui attend d’être révélé !",
+    tag: "Notre inspiration",
+    title: "Les origines de Tous Albatros",
+    description: origineTousAlbatros
+      .map((item) => `<p>${item.description}</p><br/>`)
+      .join(""),
   },
   {
     id: 3,
-    tag: "Expertise",
-    title: "DES EXPERTISES COMMUNES ET COMPLEMENTAIRES",
+    tag: "Notre expertise",
+    title: "L’agilité pédagogique de Tous Albatros",
     description:
-      "Conception et gestions de projets sociaux, socioculturels et socioéducatifs. Interventions en milieu scolaire, en pieds d’immeubles ainsi qu’en centres sociaux et culturels. Accompagnement de personnes en situation de précarité. Coaching scolaire, orientation et coaching à l’emploi",
+      "Tous Albatros est un projet « Coup de Cœur » de la saison 1 de Make The Choice (UPE13), coaché par Erilia France et accompagné par Inter-Made.",
   },
   {
     id: 4,

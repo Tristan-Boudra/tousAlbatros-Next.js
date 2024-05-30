@@ -7,11 +7,11 @@ export const Values = () => {
   return (
     <section className="flex flex-col relative px-5 ">
       <div className="bg-primary-foreground w-max rounded-full">
-        <p className="text-primary px-3 py-2 w-auto text-xs">Nos valeurs</p>
+        <p className="text-primary px-3 py-2 w-auto text-xs">Notre charte</p>
       </div>
       <div>
         <h1 className="text-2xl md:text-4xl text-accent-foreground font-bold mt-4">
-          Nos valeurs
+          Nos valeurs au quotidien
         </h1>
         <div className="flex flex-col gap-10 mt-10 items-center">
           <ValueCard data={valuesTop} />

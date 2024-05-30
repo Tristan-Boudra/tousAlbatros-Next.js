@@ -19,7 +19,7 @@ export const CarouselComponent = () => {
     <div className="flex flex-col w-full">
       <div>
         <div className="bg-primary-foreground w-max rounded-full">
-          <p className="text-primary px-3 py-2 w-auto text-xs">Avis</p>
+          <p className="text-primary px-3 py-2 w-auto text-xs">Témoignages</p>
         </div>
         <h1 className="text-2xl md:text-4xl text-accent-foreground font-bold mt-4">
           Vos avis sur Tous Albatros

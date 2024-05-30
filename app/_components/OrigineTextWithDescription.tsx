@@ -1,4 +1,4 @@
-interface TextDescriptionProps {
+interface OrigineTextDescriptionProps {
   data: {
     tag: string;
     title: string;
@@ -6,7 +6,9 @@ interface TextDescriptionProps {
   };
 }
 
-export const TextWithDescription: React.FC<TextDescriptionProps> = (props) => {
+export const OrigineTextWithDescription: React.FC<
+  OrigineTextDescriptionProps
+> = (props) => {
   const { data } = props;
 
   return (
@@ -18,10 +20,10 @@ export const TextWithDescription: React.FC<TextDescriptionProps> = (props) => {
         <h1 className="text-2xl md:text-4xl text-accent-foreground font-bold mt-4">
           {data.title}
         </h1>
-        <p
-          className="text-sm md:text-base font-medium text-muted-foreground mt-4"
+        <div
           dangerouslySetInnerHTML={{ __html: data.description }}
-        ></p>
+          className="text-sm md:text-base font-medium text-muted-foreground mt-4"
+        />
       </div>
     </div>
   );

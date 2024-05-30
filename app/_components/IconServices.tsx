@@ -28,7 +28,7 @@ export const contentIconPrestation = [
   {
     id: 0,
     icon: FileIcon,
-    title: "Ateliers d'envoi",
+    title: "Ateliers d'envol",
     subtitle: "Pour télécharger et imprimer la brochure",
     linkPdf: "/documents/brochure-ateliers-d-envol-tous-albatros-2023-2024.pdf",
     target: "_blank",

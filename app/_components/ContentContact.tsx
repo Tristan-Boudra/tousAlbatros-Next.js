@@ -4,6 +4,7 @@
 import Image from "next/image";
 import { FormContact } from "./FormContact";
 import { useEffect, useState } from "react";
+import { Button } from "@/src/components/ui/button";
 
 export const ContentContact = () => {
   const [imageSize, setImageSize] = useState(200);
@@ -40,7 +41,13 @@ export const ContentContact = () => {
         />
       </div>
       <div className="flex flex-col">
-        <FormContact />
+        {/* <FormContact /> */}
+        <a
+          href="mailto:contact@tousalbatros.fr"
+          className="bg-primary text-accent-foreground rounded-lg p-2 text-center px-5 text-sm"
+        >
+          Nous contacter
+        </a>
       </div>
     </div>
   );

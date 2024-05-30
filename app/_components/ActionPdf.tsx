@@ -15,10 +15,10 @@ export const ActionPdf = (props: ActionPdfProps) => {
   const contentIcon = props.data;
   return (
     <>
-      <div className="px-5 ">
+      <div className="px-5 mt-10">
         <p className="font-medium text-sm text-accent-foreground">
-          Cliquez sur notre brochure pour visualiser notre offre d’ateliers
-          d’Envol.
+          Plus de détails en cliquant sur l’offre d’ateliers qui vous
+          intéresse :
         </p>
         <div className="flex flex-col lg:flex-row gap-10 flex-wrap mt-10">
           {contentIcon.map((item) => (
