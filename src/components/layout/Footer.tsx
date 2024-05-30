@@ -50,7 +50,7 @@ export const Footer = () => {
               Où sommes-nous ?
             </h3>
             <div className="flex flex-row mx-auto gap-5">
-              <div className="flex flex-col justify-center items-center text-center md:text-left">
+              <div className="flex flex-col justify-center text-center md:text-left">
                 <h4 className="text-accent-foreground text-md font-bold mt-3 md:text-left">
                   Siège social
                 </h4>
@@ -67,7 +67,7 @@ export const Footer = () => {
                   13001 MARSEILLE
                 </p>
               </div>
-              <div className="flex flex-col items-center text-center md:text-left">
+              <div className="flex flex-col text-center md:text-left">
                 <h4 className="text-accent-foreground text-md font-bold mt-3 md:text-left">
                   Refuge des Albatros
                 </h4>
