@@ -115,7 +115,7 @@ export const team = [
   },
   {
     id: 19,
-    genre: "male",
+    genre: "female",
     name: "Michèle",
     role: "Bénévole",
   },

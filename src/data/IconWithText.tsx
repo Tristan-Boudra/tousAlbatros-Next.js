@@ -9,6 +9,9 @@ import {
   Scale,
   UsersRound,
   Cog,
+  MapPin,
+  Sun,
+  SlidersHorizontal,
 } from "lucide-react";
 
 const TrendingUpIcon = (
@@ -92,6 +95,36 @@ const CogIcon = (
   </div>
 );
 
+const UsersRoundIcon2 = (
+  <div className="flex bg-[#FFF9EB] dark:bg-[#241607] w-12 h-12 md:w-16 md:h-16 p-4 rounded-lg content-center items-center">
+    <UsersRound
+      className="flex dark:text-secondary-foreground items-center mx-auto"
+      size={30}
+    />
+  </div>
+);
+
+const MapPinIcon = (
+  <div className="flex bg-[#F2F9E9] dark:bg-[#072313] w-12 h-12 md:w-16 md:h-16 p-4 rounded-lg content-center items-center">
+    <MapPin className="flex text-[#BBE18B] items-center mx-auto" size={30} />
+  </div>
+);
+
+const SunIcon = (
+  <div className="flex bg-[#E5F6F2] dark:bg-[#07231c] w-12 h-12 md:w-16 md:h-16 p-4 rounded-lg content-center items-center">
+    <Sun className="flex text-[#78CFBA] items-center mx-auto" size={30} />
+  </div>
+);
+
+const SliderHorizontalIcon = (
+  <div className="flex bg-[#D8F2FA] dark:bg-primary-foreground w-12 h-12 md:w-16 md:h-16 p-4 rounded-lg content-center items-center">
+    <SlidersHorizontal
+      className="flex text-primary items-center mx-auto"
+      size={30}
+    />
+  </div>
+);
+
 export const contentIcon = [
   {
     id: 0,
@@ -169,24 +202,28 @@ export const contentIcon = [
   },
   {
     id: 11,
+    icon: UsersRoundIcon2,
     title: "Public participant",
     subtitle:
       "Jeunes de 9 à 25 ans, mais nous faisons aussi des ateliers pour les personnes qui entourent les jeunes comme leurs parents ou les (futurs) professionnels.",
   },
   {
     id: 12,
+    icon: MapPinIcon,
     title: "Lieux d’intervention",
     subtitle:
       "Toute structure publique ou privée des Bouches-du-Rhône, mais aussi possible dans les locaux de Tous Albatros dans le 1e arrondissement de Marseille.",
   },
   {
     id: 13,
+    icon: SunIcon,
     title: "Thématiques possibles",
     subtitle:
       "Une ou plusieurs par atelier, autour de la connaissance de soi, de la relation à l’autre, de la promotion de la santé, etc. Challengez-nous !",
   },
   {
     id: 14,
+    icon: SliderHorizontalIcon,
     title: "Autres modalités",
     subtitle:
       "Programmes de 1 à 10 ateliers, d’une durée de 1 à 3 heures chacun, pour des groupes de 6 à 35 personnes, mixtes ou non mixtes en âges et en genres.",

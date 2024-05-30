@@ -40,11 +40,11 @@ export default function Home() {
       <Spacing size="md" />
       <Supports />
       <Spacing size="md" />
-      <Brands />
-      <Spacing size="md" />
       <div className="flex justify-center px-5 ">
         <CarouselComponent />
       </div>
+      <Spacing size="md" />
+      <Brands />
     </Layout>
   );
 }

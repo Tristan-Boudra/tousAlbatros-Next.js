@@ -41,14 +41,14 @@ export const Supports = () => {
           >
             <Image
               src={content.image}
-              className={`w-44 md:w-auto md:h-28 object-cover rounded-lg ${
+              className={`w-44 md:w-auto md:h-20 object-cover rounded-lg ${
                 content.background ? "dark:bg-white p-2 rounded-lg" : ""
               }`}
               alt={`support ${index + 1}`}
               width={500}
               height={500}
             />
-            <p>{content.description}</p>
+            <p className="text-muted-foreground">{content.description}</p>
           </div>
         ))}
       </div>

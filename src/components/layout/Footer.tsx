@@ -49,9 +49,9 @@ export const Footer = () => {
             <h3 className="text-accent-foreground text-lg font-bold">
               Où sommes-nous ?
             </h3>
-            <div className="flex flex-rox gap-5">
-              <div>
-                <h4 className="text-accent-foreground text-md font-bold mt-3">
+            <div className="flex flex-row mx-auto gap-5">
+              <div className="flex flex-col justify-center items-center text-center md:text-left">
+                <h4 className="text-accent-foreground text-md font-bold mt-3 md:text-left">
                   Siège social
                 </h4>
                 <p className="text-muted-foreground w-1/2 md:w-64 text-center md:text-left">
@@ -67,8 +67,8 @@ export const Footer = () => {
                   13001 MARSEILLE
                 </p>
               </div>
-              <div>
-                <h4 className="text-accent-foreground text-md font-bold mt-3">
+              <div className="flex flex-col items-center text-center md:text-left">
+                <h4 className="text-accent-foreground text-md font-bold mt-3 md:text-left">
                   Refuge des Albatros
                 </h4>
                 <p className="text-muted-foreground w-1/2 md:w-64 text-center md:text-left">
@@ -80,7 +80,7 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center md:items-start mt-5">
             <h3 className="text-accent-foreground text-lg font-bold">
               Contact
             </h3>
