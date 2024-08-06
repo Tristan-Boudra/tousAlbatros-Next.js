@@ -12,6 +12,7 @@ export const Brands = () => {
     "/supports/PACA.png",
     "/supports/Ligue_enseignement.png",
     "/supports/Unicite.png",
+    "/supports/Préfet_BDR.png",
   ];
 
   return (

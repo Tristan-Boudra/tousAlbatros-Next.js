@@ -165,7 +165,11 @@ export const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href="/" target="_blank" rel="noreferrer">
+            <Link
+              href="https://www.snapchat.com/add/tousalbatros?share_id=Pk3AQnWS5uI&locale=fr-FR"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image
                 src="/footer/snapchat.svg"
                 className="h-9 w-9"

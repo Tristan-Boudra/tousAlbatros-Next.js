@@ -11,7 +11,7 @@ export const OurActions = () => {
       </h1>
       <div className="flex flex-col gap-10 mt-10">
         <p className="text-sm md:text-base font-medium text-muted-foreground md:mt-4">
-          Les activités proposées dans nos Ateliers d’Envol croise les outils
+          Les activités proposées dans nos Ateliers d’Envol croisent les outils
           pédagogiques de l’
           <strong className="text-accent-foreground">
             éducation populaire

@@ -52,12 +52,14 @@ export const team = [
     genre: "female",
     name: "Simone",
     role: "Volontaire en service civique",
+    image: "/teams/OK Simone.jpg",
   },
   {
     id: 9,
     genre: "female",
     name: "Clara",
-    role: "Assistance de service social stagiaire",
+    role: "Assistante de service social stagiaire",
+    image: "/teams/OK Clara.jpg",
   },
   {
     id: 10,
@@ -100,6 +102,13 @@ export const team = [
     genre: "female",
     name: "Céline C.",
     role: "Administratrice",
+  },
+  {
+    id: 16,
+    genre: "female",
+    name: "Maïlyss",
+    role: "Bénévole",
+    image: "/teams/Maïlyss-Bénévole.jpg",
   },
   {
     id: 17,

@@ -134,14 +134,14 @@ export const contentIcon = [
   },
   {
     id: 1,
-    icon: BadgeCheckIcon,
-    title: "272",
+    icon: UsersIcon,
+    title: "456",
     subtitle: "Ateliers animés",
   },
   {
     id: 2,
-    icon: UsersIcon,
-    title: "3031",
+    icon: BadgeCheckIcon,
+    title: "4834",
     subtitle: "Jeunes participants",
   },
   {
