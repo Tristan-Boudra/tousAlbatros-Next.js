@@ -52,14 +52,14 @@ export const team = [
     genre: "female",
     name: "Simone",
     role: "Volontaire en service civique",
-    image: "/teams/OK Simone.jpg",
+    image: "/teams/Simone.jpg",
   },
   {
     id: 9,
     genre: "female",
     name: "Clara",
     role: "Assistante de service social stagiaire",
-    image: "/teams/OK Clara.jpg",
+    image: "/teams/Clara.jpg",
   },
   {
     id: 10,

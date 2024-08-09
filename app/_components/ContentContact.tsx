@@ -32,6 +32,23 @@ export const ContentContact = () => {
           Notre équipe est disponible de 9h à 17h30, du lundi au jeudi et sera
           ravie d'échanger avec vous.
         </p>
+        <a
+          href="mailto:contact@tousalbatros.fr"
+          className="bg-primary text-accent-foreground rounded-lg p-2 text-center px-5 mt-10 text-sm w-max m-auto"
+        >
+          Nous contacter
+        </a>
+        <a
+          href="mailto:contact@tousalbatros.fr"
+          className="mt-5 text-muted-foreground m-auto"
+        >
+          contact@tousalbatros.fr
+        </a>
+        <a href="tel:0616133806" className="mt-2 text-muted-foreground m-auto">
+          06 16 13 38 06
+        </a>
+      </div>
+      <div className="flex flex-col">
         <Image
           src="/contact.png"
           className="mx-auto mt-10 md:mt-0"
@@ -39,14 +56,11 @@ export const ContentContact = () => {
           width={imageSize}
           height={imageSize}
         />
-      </div>
-      <div className="flex flex-col">
-        {/* <FormContact /> */}
         <a
-          href="mailto:contact@tousalbatros.fr"
-          className="bg-primary text-accent-foreground rounded-lg p-2 text-center px-5 text-sm"
+          href="https://linktr.ee/tousalbatros"
+          className="bg-[#BBE18B] dark:text-accent rounded-lg p-2 text-center px-5 text-sm w-max m-auto mt-10"
         >
-          Nous contacter
+          Cliquez ici pour <br /> nous suivre ou nous soutenir
         </a>
       </div>
     </div>

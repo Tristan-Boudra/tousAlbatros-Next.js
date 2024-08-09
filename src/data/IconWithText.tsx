@@ -41,7 +41,7 @@ const BadgeCheckIcon = (
 const BadgeCheckIcon2 = (
   <div className="flex bg-[#FFF9EB] dark:bg-[#241607] w-12 h-12 md:w-16 md:h-16 p-4 rounded-lg content-center items-center">
     <BadgeCheck
-      className="flex dark:text-secondary-foreground items-center mx-auto"
+      className="flex text-secondary dark:text-secondary-foreground items-center mx-auto"
       size={30}
     />
   </div>
@@ -98,7 +98,7 @@ const CogIcon = (
 const UsersRoundIcon2 = (
   <div className="flex bg-[#FFF9EB] dark:bg-[#241607] w-12 h-12 md:w-16 md:h-16 p-4 rounded-lg content-center items-center">
     <UsersRound
-      className="flex dark:text-secondary-foreground items-center mx-auto"
+      className="flex text-secondary dark:text-secondary-foreground items-center mx-auto"
       size={30}
     />
   </div>
